@@ -94,10 +94,10 @@ export default function BookingSection() {
     );
     
     // WhatsApp phone number (remove any non-digit characters for the API)
-    const phoneNumber = '08108851145';
+    const phoneNumber = '+2348108851145';
     
     // Create WhatsApp URL
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+    const whatsappUrl = `https://wa.me/${+2348108851145}?text=${whatsappMessage}`;
     
     // Simulate loading and then open WhatsApp
     setTimeout(() => {
