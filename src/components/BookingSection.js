@@ -125,13 +125,13 @@ export default function BookingSection() {
   };
 
   return (
-    <section id="booking-section" className="py-20 px-4 bg-white">
+    <section id="booking-section" className="py-20 px-4 bg-gradient-to-br from-[#051F40] via-[#0A3064] to-[#010313]">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
             Book Your Appointment
           </h2>
-          <p className="font-poppins text-lg text-gray-600">
+          <p className="font-poppins text-lg text-[#DcB798]">
             Ready to transform your look? Book your appointment with us today
           </p>
         </div>
@@ -142,10 +142,10 @@ export default function BookingSection() {
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6 bg-gradient-to-br from-[#DcB798]/10 to-[#EF7D02]/10 backdrop-blur-sm rounded-3xl p-8 border border-[#DcB798]/30">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label className="block font-poppins text-sm font-medium text-gray-700 mb-2">
+              <label className="block font-poppins text-sm font-medium text-[#DcB798] mb-2">
                 Name *
               </label>
               <input
@@ -153,8 +153,8 @@ export default function BookingSection() {
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200 font-poppins ${
-                  errors.name ? 'border-red-500' : 'border-gray-300'
+                className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#EF7D02] focus:border-transparent transition-all duration-200 font-poppins bg-white/90 backdrop-blur-sm ${
+                  errors.name ? 'border-red-500' : 'border-[#DcB798]/50'
                 }`}
                 placeholder="Your full name"
               />
@@ -164,7 +164,7 @@ export default function BookingSection() {
             </div>
 
             <div>
-              <label className="block font-poppins text-sm font-medium text-gray-700 mb-2">
+              <label className="block font-poppins text-sm font-medium text-[#DcB798] mb-2">
                 Phone Number *
               </label>
               <input
@@ -172,8 +172,8 @@ export default function BookingSection() {
                 name="phone"
                 value={formData.phone}
                 onChange={handleInputChange}
-                className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200 font-poppins ${
-                  errors.phone ? 'border-red-500' : 'border-gray-300'
+                className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#EF7D02] focus:border-transparent transition-all duration-200 font-poppins bg-white/90 backdrop-blur-sm ${
+                  errors.phone ? 'border-red-500' : 'border-[#DcB798]/50'
                 }`}
                 placeholder="Your phone number"
               />
@@ -185,15 +185,15 @@ export default function BookingSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label className="block font-poppins text-sm font-medium text-gray-700 mb-2">
+              <label className="block font-poppins text-sm font-medium text-[#DcB798] mb-2">
                 Service *
               </label>
               <select
                 name="service"
                 value={formData.service}
                 onChange={handleInputChange}
-                className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200 font-poppins ${
-                  errors.service ? 'border-red-500' : 'border-gray-300'
+                className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#EF7D02] focus:border-transparent transition-all duration-200 font-poppins bg-white/90 backdrop-blur-sm ${
+                  errors.service ? 'border-red-500' : 'border-[#DcB798]/50'
                 }`}
               >
                 <option value="">Select a service</option>
@@ -209,7 +209,7 @@ export default function BookingSection() {
             </div>
 
             <div>
-              <label className="block font-poppins text-sm font-medium text-gray-700 mb-2">
+              <label className="block font-poppins text-sm font-medium text-[#DcB798] mb-2">
                 Location *
               </label>
               <input
@@ -217,8 +217,8 @@ export default function BookingSection() {
                 name="location"
                 value={formData.location}
                 onChange={handleInputChange}
-                className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200 font-poppins ${
-                  errors.location ? 'border-red-500' : 'border-gray-300'
+                className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#EF7D02] focus:border-transparent transition-all duration-200 font-poppins bg-white/90 backdrop-blur-sm ${
+                  errors.location ? 'border-red-500' : 'border-[#DcB798]/50'
                 }`}
                 placeholder="Your location"
               />
@@ -229,7 +229,7 @@ export default function BookingSection() {
           </div>
 
           <div>
-            <label className="block font-poppins text-sm font-medium text-gray-700 mb-2">
+            <label className="block font-poppins text-sm font-medium text-[#DcB798] mb-2">
               Preferred Date *
             </label>
             <input
@@ -237,8 +237,8 @@ export default function BookingSection() {
               name="date"
               value={formData.date}
               onChange={handleInputChange}
-              className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200 font-poppins ${
-                errors.date ? 'border-red-500' : 'border-gray-300'
+              className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#EF7D02] focus:border-transparent transition-all duration-200 font-poppins bg-white/90 backdrop-blur-sm ${
+                errors.date ? 'border-red-500' : 'border-[#DcB798]/50'
               }`}
             />
             {errors.date && (
@@ -247,7 +247,7 @@ export default function BookingSection() {
           </div>
 
           <div>
-            <label className="block font-poppins text-sm font-medium text-gray-700 mb-2">
+            <label className="block font-poppins text-sm font-medium text-[#DcB798] mb-2">
               Message (Optional)
             </label>
             <textarea
@@ -255,7 +255,7 @@ export default function BookingSection() {
               value={formData.message}
               onChange={handleInputChange}
               rows="4"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200 font-poppins resize-none"
+              className="w-full px-4 py-3 border border-[#DcB798]/50 rounded-lg focus:ring-2 focus:ring-[#EF7D02] focus:border-transparent transition-all duration-200 font-poppins resize-none bg-white/90 backdrop-blur-sm"
               placeholder="Any special requests or details..."
             ></textarea>
           </div>

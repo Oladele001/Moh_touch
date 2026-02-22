@@ -26,29 +26,29 @@ export default function HeroSection() {
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-pink-100 to-purple-100"></div>
         )}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#010313]/80 via-[#051F40]/70 to-[#0A3064]/60"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
           Moh_touch
-          <span className="block text-3xl md:text-5xl lg:text-6xl mt-2 bg-gradient-to-r from-pink-300 to-pink-400 bg-clip-text text-transparent">
+          <span className="block text-3xl md:text-5xl lg:text-6xl mt-2 bg-gradient-to-r from-[#DcB798] to-[#EF7D02] bg-clip-text text-transparent">
             Beauty Arena
           </span>
         </h1>
         
-        <p className="font-poppins text-xl md:text-2xl lg:text-3xl mb-8 font-light text-pink-100">
+        <p className="font-poppins text-xl md:text-2xl lg:text-3xl mb-8 font-light text-[#DcB798]">
           Discover Your True Beauty Potential
         </p>
         
         <button 
           onClick={scrollToBooking}
-          className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-poppins font-medium text-white bg-gradient-to-r from-pink-500 to-pink-600 rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/25 cursor-pointer"
+          className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-poppins font-medium text-white bg-gradient-to-r from-[#EF7D02] to-[#B662229] rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#326DA3]/25 cursor-pointer"
         >
           <span className="relative z-10">Book Now</span>
-          <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-pink-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#B662229] to-[#010313] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="absolute inset-0 bg-[#DcB798] opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
         </button>
       </div>
 

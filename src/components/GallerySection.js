@@ -43,13 +43,13 @@ export default function GallerySection() {
   };
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-20 px-4 bg-gradient-to-br from-[#010313] via-[#051F40] to-[#0A3064]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
             Our Gallery
           </h2>
-          <p className="font-poppins text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="font-poppins text-lg text-[#DcB798] max-w-2xl mx-auto">
             Explore our stunning makeup transformations and beauty creations
           </p>
         </div>
@@ -58,7 +58,7 @@ export default function GallerySection() {
           {galleryImages.map((image) => (
             <div
               key={image.id}
-              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+              className="group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 border-2 border-[#DcB798]/30 hover:border-[#EF7D02] backdrop-blur-sm"
             >
               <div className="aspect-square overflow-hidden">
                 {!imageErrors[image.id] ? (
@@ -69,14 +69,14 @@ export default function GallerySection() {
                     onError={() => handleImageError(image.id)}
                   />
                 ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
-                    <span className="text-pink-400 text-4xl">💄</span>
+                  <div className="w-full h-full bg-gradient-to-br from-[#DcB798] to-[#EF7D02] flex items-center justify-center">
+                    <span className="text-[#010313] text-4xl">💄</span>
                   </div>
                 )}
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-gradient-to-t from-[#010313]/80 via-[#051F40]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <p className="font-poppins text-sm font-medium">{image.alt}</p>
+                  <p className="font-poppins text-sm font-medium text-[#DcB798]">{image.alt}</p>
                 </div>
               </div>
             </div>
