@@ -5,6 +5,13 @@ import { useState } from 'react';
 export default function HeroSection() {
   const [imageError, setImageError] = useState(false);
 
+  const scrollToBooking = () => {
+    const bookingSection = document.getElementById('booking-section');
+    if (bookingSection) {
+      bookingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -35,7 +42,10 @@ export default function HeroSection() {
           Discover Your True Beauty Potential
         </p>
         
-        <button className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-poppins font-medium text-white bg-gradient-to-r from-pink-500 to-pink-600 rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/25">
+        <button 
+          onClick={scrollToBooking}
+          className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-poppins font-medium text-white bg-gradient-to-r from-pink-500 to-pink-600 rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/25 cursor-pointer"
+        >
           <span className="relative z-10">Book Now</span>
           <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-pink-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
