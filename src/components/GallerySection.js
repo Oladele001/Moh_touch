@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const galleryContainerVariants = {
@@ -37,32 +38,32 @@ export default function GallerySection() {
   const galleryImages = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "./funke.jpeg",
       alt: "Glam makeup look 1"
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "./img01.jpeg",
       alt: "Bridal makeup"
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1582797583772-8345b04a3229?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "./img02.jpeg",
       alt: "Creative makeup"
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "./img03.jpeg",
       alt: "Beauty makeup"
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1597123554248-4fc257825d6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "./img04.jpeg",
       alt: "Professional makeup"
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "./img05.jpeg",
       alt: "Glamorous look"
     }
   ];

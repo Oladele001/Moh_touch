@@ -227,7 +227,7 @@ export default function AboutSection() {
                 className="flex-1 text-center md:text-left"
               >
                 <h4 className="font-playfair text-2xl md:text-3xl font-bold text-white mb-2">
-                  Moh Badmus
+                MISS OMOWUMI
                 </h4>
                 <p className="font-poppins text-lg text-[#DcB798] font-medium mb-4">
                   Founder & CEO
@@ -256,6 +256,10 @@ export default function AboutSection() {
                   className="flex flex-wrap gap-3 justify-center md:justify-start mt-6"
                 >
                   <motion.span 
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: 1.2 }}
+                    viewport={{ once: true }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     className="px-4 py-2 bg-gradient-to-r from-[#EF7D02] to-[#B662229] text-white rounded-full text-sm font-poppins font-medium shadow-lg"
@@ -263,18 +267,59 @@ export default function AboutSection() {
                     💄 Makeup Artist
                   </motion.span>
                   <motion.span 
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: 1.4 }}
+                    viewport={{ once: true }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    className="px-4 py-2 bg-gradient-to-r from-[#326DA3] to-[#0A3064] text-white rounded-full text-sm font-poppins font-medium shadow-lg"
+                    className="px-4 py-2 bg-gradient-to-r from-[#EF7D02] to-[#B662229] text-white rounded-full text-sm font-poppins font-medium shadow-lg"
                   >
-                    🎨 Beauty Expert
+                    💇‍♀️ Hair Stylist
                   </motion.span>
                   <motion.span 
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: 1.6 }}
+                    viewport={{ once: true }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    className="px-4 py-2 bg-gradient-to-r from-[#DcB798] to-[#051F40] text-white rounded-full text-sm font-poppins font-medium shadow-lg"
+                    className="px-4 py-2 bg-gradient-to-r from-[#EF7D02] to-[#B662229] text-white rounded-full text-sm font-poppins font-medium shadow-lg"
                   >
-                    👑 Industry Leader
+                    💅 Nail Artist
+                  </motion.span>
+                  <motion.span 
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: 1.8 }}
+                    viewport={{ once: true }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="px-4 py-2 bg-gradient-to-r from-[#EF7D02] to-[#B662229] text-white rounded-full text-sm font-poppins font-medium shadow-lg"
+                  >
+                    👗 Fashion Stylist
+                  </motion.span>
+                  <motion.span 
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: 2.0 }}
+                    viewport={{ once: true }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="px-4 py-2 bg-gradient-to-r from-[#EF7D02] to-[#B662229] text-white rounded-full text-sm font-poppins font-medium shadow-lg"
+                  >
+                    ✨ Beauty Expert
+                  </motion.span>
+                  <motion.span 
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: 2.2 }}
+                    viewport={{ once: true }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="px-4 py-2 bg-gradient-to-r from-[#EF7D02] to-[#B662229] text-white rounded-full text-sm font-poppins font-medium shadow-lg"
+                  >
+                    🎨 Creative Director
                   </motion.span>
                 </motion.div>
               </motion.div>
